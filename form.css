@@ -1,0 +1,88 @@
+.register-wrapper{
+    background-image: linear-gradient(135deg, #0eeff0 30%, #088f90 90%);
+    background-image: -webkit-linear-gradient(135deg, #0eeff0 30%, #088f90 90%);
+    position: relative;
+    z-index: 3;
+    padding: 100px;
+    color: #999;
+    font-size: 1rem;
+    
+}
+
+.register-wrapper *{
+    box-sizing: border-box;
+}
+
+.register-wrapper form input {
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px;
+    line-height: 50px;
+    height: 50px;
+    background: white;
+    border: solid 1px #e6e6e6;
+    border-bottom-width: 3px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.register-wrapper form input:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.register-wrapper form input[type="email"]:focus,
+.register-wrapper form input[type="email"]:active,
+.register-wrapper form input[type="password"]:focus,
+.register-wrapper form input[type="password"]:active{
+    border-color: #ccc;
+}
+
+.register-wrapper form input[type="submit"] {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #f2395a;
+    background-size: 20px 20px;
+    background-image: linear-gradient(45deg,
+                                         rgba(255,255,255,0.15) 25%,
+                                         rgba(0,0,0,0) 25%,
+                                         rgba(0,0,0,0) 55%,
+                                         rgba(255,255,255,0.15) 50%,
+                                         rgba(255,255,255,0.15) 75%,
+                                         rgba(0,0,0,0) 75%,
+                                         rgba(0,0,0,0) 
+                                         );
+
+    border: 1px solid #f02146;
+    border-bottom-width: 3px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+   
+}
+
+.register-wrapper form input[type="submit"]:hover{
+    background-size: 40px 40px;
+}
+
+.register-title{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+    border-bottom: dashed 1.2px #e6e6e6;
+}
+.register-block{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
